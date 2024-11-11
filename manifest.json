@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ENHANCED-FILE-EXPLORER (DARK) for Chrome", 
+  "version": "1.0.0",
+  "description": "This extension is based on existing project by Federico link:- https://github.com/federicobrancasi",
+  "icons": {
+      "16": "images/folder-svgrepo-com 16x16.png",
+      "32": "images/folder-svgrepo-com 32x32.png",
+      "48": "images/folder-svgrepo-com 48x48.png",
+      "128": "images/folder-svgrepo-com 128x128.png"
+    },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["file://*"]
+  }],
+  "author": "soumabhasaha1509@gmail.com", 
+  "host_permissions": [ "<all_urls>" ]
+}
